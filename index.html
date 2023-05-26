@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+	<script>
+        function myfunction1(){
+            document.body.style.backgroundColor = "lightblue";
+        }
+        function myfunction2(){
+            document.querySelector("#demo").innerText = "Be the best version of you!";
+        }
+        function myfunction3(){
+            document.querySelector(".time").innerText = Date();
+        }
+        function myfunction4(){
+            document.getElementById("pic").src = "dice-6.png";
+        }
+        function myfunction5(){
+            document.getElementById("pic").style.display = "none";
+        }
+        function myfunction6(){
+            document.getElementById("pic").style.display = "block";
+        }
+        function myfunction7(){
+            document.getElementById("demo").innerText = "Be the best version of you!";
+            document.querySelector(".time").innerText = Date();
+            document.getElementById("EventDiv").style.display = "flex";
+            document.getElementById("EventDiv").style.flexDirection = "column";
+            document.getElementById("EventDiv").style.alignItems= "center";
+            document.getElementById("EventDiv").style.backgroundColor = "grey";
+            document.getElementById("pic").style.border = "solid 6px green";
+
+        }
+        function myfunction8(){
+            document.getElementById("EventDiv").style.display = "none";
+        }
+        function myfunction9(){
+            document.getElementById("demo").innerText = "Be the best version of you!";
+            document.querySelector(".time").innerText = Date();
+            document.getElementById("EventDiv").style.display = "flex";
+            document.getElementById("EventDiv").style.flexDirection = "column";
+            document.getElementById("EventDiv").style.justifyContent = "center"
+            document.getElementById("EventDiv").style.alignItems= "center";
+            document.getElementById("EventDiv").style.backgroundColor = "grey";
+            document.getElementById("pic").style.border = "solid 6px green"
+            var text = "Thank you for help"
+            var myP = document.createElement("p");
+            myP.textContent = text;
+            myP.style.color = "yellow";
+            myP.style.display = "flex";
+            myP.style.flexDirection = "column";
+            myP.style.alignItems = "center";
+            document.body.appendChild(myP);
+        }
+
+    </script>
+
+  <div id="EventDiv">
+
+    <h1 id="demo"></h1>
+    <p class="time" id="time"></p>
+    <img id="pic" src="dice-1.png" style=" height: 100px; width: 100px; ">
+  
+  </div>
+
+  <div class="button-container">
+    <button class = "hover-effect" onclick="myfunction1()">Change Bg</button>
+    <button class = "hover-effect" onclick="myfunction2()">Good vibes</button>
+    <button class = "hover-effect" onclick="myfunction3()">Time</button>
+    <button class = "hover-effect" onclick="myfunction4()">Change picure</button>
+    <button class = "hover-effect" onclick="myfunction5()">Hide picture</button>
+    <button class = "hover-effect" onclick="myfunction6()">Show Picture</button>
+    <button class = "hover-effect" onclick="myfunction7()">Header</button>
+    <button class = "hover-effect" onclick="myfunction8()">Remove Header</button>
+    <button class = "hover-effect" onclick="myfunction9()">show Header</button>
+
+  
+  </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
